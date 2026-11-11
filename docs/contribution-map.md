@@ -2,9 +2,9 @@
 
 | Anggota | Tanggung Jawab |
 |---|---|
-| Anggota 1 | Source & Parameter Validation |
-| Anggota 2 | Backup Creation |
-| Anggota 3 | Integrity Verification |
+| Anggota 1 (afwan) | validasi sumber dan parameter |
+| Anggota 2 | Pembuatan Arsip |
+| Anggota 3 | Verifikasi Integritas |
 | Anggota 4 | Data Recovery |
 | Anggota 5 | Lock, Logging, Reporting, Docker |
 | Anggota 6 | User, Group, Permission, Backup Access |

@@ -1,0 +1,22 @@
+# Runtime data
+backup/
+restore-test/
+logs/
+output/
+
+# Configuration secrets
+config/backup.conf
+
+# Generated archives
+*.tar
+*.tar.gz
+*.sha256
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db

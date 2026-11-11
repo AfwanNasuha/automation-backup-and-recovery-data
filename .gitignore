@@ -1,22 +1,22 @@
-# Runtime data
+# Data operasional yang dibuat saat program berjalan
 backup/
 restore-test/
 logs/
 output/
 
-# Configuration secrets
+# Konfigurasi lokal yang mungkin memuat informasi sensitif
 config/backup.conf
 
-# Generated archives
+# Arsip dan berkas checksum hasil pengujian
 *.tar
 *.tar.gz
 *.sha256
 
-# Temporary files
+# Berkas sementara dan editor
 *.tmp
 *.swp
 *~
 
-# OS files
+# Berkas sistem operasi
 .DS_Store
 Thumbs.db

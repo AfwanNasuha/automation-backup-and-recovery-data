@@ -1,6 +1,5 @@
-# Evidence
+# Bukti Implementasi dan Pengujian
 
-Berisi bukti implementasi dan pengujian proyek.
+Direktori ini berisi bukti pelaksanaan proyek, termasuk tangkapan layar terminal, keluaran perintah, exit status, log terpilih, dan checksum yang relevan.
 
-Bukti harus mencantumkan konteks pengujian
-dan tidak boleh memuat informasi sensitif.
+Setiap bukti harus disertai konteks atau ID pengujian. Bersihkan informasi sensitif sebelum bukti dimasukkan ke repository.

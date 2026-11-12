@@ -5,6 +5,9 @@
 
 set -Eeuo pipefail
 
+# Berkas baru hanya dapat diakses pemilik (arsip langsung berizin 600)
+umask 077
+
 # Memeriksa jumlah parameter
 if [ "$#" -ne 2 ]; then
     echo "Penggunaan: $0 <folder_sumber> <folder_tujuan>"

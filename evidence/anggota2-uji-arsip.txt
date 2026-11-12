@@ -4,18 +4,18 @@ Sumber  : /tmp/uji/data
 Tujuan  : /tmp/uji/backup
 ================================
 BACKUP BERHASIL!
-Arsip: /tmp/uji/backup/backup_20261112_140253_6130.tar.gz
+Arsip: /tmp/uji/backup/backup_20261112_145252_6824.tar.gz
 ================================
 Exit status: 0
 total 4
--rw------- 1 agung agung 178 Nov 12 14:02 backup_20261112_140253_6130.tar.gz
+-rw------- 1 agung agung 178 Nov 12 14:52 backup_20261112_145252_6824.tar.gz
 data/
 data/b.txt
 data/a.txt
 ISI SAMA
 
 === T05: tujuan tidak dapat ditulis ===
-mktemp: Permission denied (os error 13) at path "/tmp/uji/backup_ro/.write-test.gFi8iV"
+mktemp: Permission denied (os error 13) at path "/tmp/uji/backup_ro/.write-test.1t1rY5"
 ERROR: Folder tujuan tidak dapat ditulis: /tmp/uji/backup_ro
 Exit status: 1
 total 0

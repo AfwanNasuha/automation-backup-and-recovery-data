@@ -2,7 +2,7 @@
 
 Penanggung jawab: Muhammad Agung (2510512181). Bukti: `evidence/anggota2-uji-arsip.txt`.
 
-| Item | A2-P01 (positif) | A2-N01 (negatif) |
+| Item | T04 (positif) | T05 (negatif) |
 |---|---|---|
 | Tujuan | Arsip terbentuk dan isinya sesuai | Tujuan tidak dapat ditulis, kegagalan dilaporkan |
 | Prasyarat | Folder sumber berisi a.txt dan b.txt; folder tujuan dapat ditulis | Folder tujuan diberi izin 555 |
@@ -12,5 +12,5 @@ Penanggung jawab: Muhammad Agung (2510512181). Bukti: `evidence/anggota2-uji-ars
 | Status | Lulus | Lulus |
 | Pemulihan | Hapus /tmp/uji | `chmod 755` pada folder tujuan |
 
-Catatan: pada A2-N01 kegagalan ditangkap oleh pemeriksaan folder tujuan
+Catatan: pada T05 kegagalan ditangkap oleh pemeriksaan folder tujuan
 sebelum `tar` dijalankan, sehingga cabang kegagalan `tar` tidak diuji.

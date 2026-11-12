@@ -1,4 +1,4 @@
-=== A2-P01: uji positif ===
+=== T04: uji positif ===
 Memulai proses backup...
 Sumber  : /tmp/uji/data
 Tujuan  : /tmp/uji/backup
@@ -14,7 +14,7 @@ data/b.txt
 data/a.txt
 ISI SAMA
 
-=== A2-N01: tujuan tidak dapat ditulis ===
+=== T05: tujuan tidak dapat ditulis ===
 mktemp: Permission denied (os error 13) at path "/tmp/uji/backup_ro/.write-test.gFi8iV"
 ERROR: Folder tujuan tidak dapat ditulis: /tmp/uji/backup_ro
 Exit status: 1

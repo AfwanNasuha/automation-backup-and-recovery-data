@@ -1,0 +1,21 @@
+=== T04: uji positif ===
+Memulai proses backup...
+Sumber  : /tmp/uji/data
+Tujuan  : /tmp/uji/backup
+================================
+BACKUP BERHASIL!
+Arsip: /tmp/uji/backup/backup_20261112_145504_7080.tar.gz
+================================
+Exit status: 0
+total 4
+-rw------- 1 agung agung 178 Nov 12 14:55 backup_20261112_145504_7080.tar.gz
+data/
+data/b.txt
+data/a.txt
+ISI SAMA
+
+=== T05: tujuan tidak dapat ditulis ===
+mktemp: Permission denied (os error 13) at path "/tmp/uji/backup_ro/.write-test.H8MvMa"
+ERROR: Folder tujuan tidak dapat ditulis: /tmp/uji/backup_ro
+Exit status: 1
+total 0

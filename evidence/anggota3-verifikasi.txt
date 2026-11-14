@@ -1,0 +1,49 @@
+====================================================================
+BUKTI PENGUJIAN MODUL VERIFIKASI INTEGRITAS (ANGGOTA 3)
+Penanggung Jawab : Muhammad Afaf Kafabillah (2510512175)
+Modul            : scripts/verify.sh
+Skenario         : T06 (Positif) dan T07 (Negatif)
+====================================================================
+
+[1] Pembuatan Checksum SHA-256 Arsip Asli
+Perintah:
+./scripts/verify.sh generate /tmp/uji_afaf/arsip/backup_uji.tar.gz
+
+Keluaran:
+Membuat checksum SHA-256 untuk: /tmp/uji_afaf/arsip/backup_uji.tar.gz
+==========================================
+CHECKSUM BERHASIL DIBUAT!
+File Checksum : /tmp/uji_afaf/arsip/backup_uji.tar.gz.sha256
+SHA-256       : a019235b4a1e8132e9b60566c17b39a7904297b07c38d1a68c704923f6494a9e
+==========================================
+
+[2] Pengujian T06 - Verifikasi Arsip Asli (Kondisi Positif)
+Perintah:
+./scripts/verify.sh verify /tmp/uji_afaf/arsip/backup_uji.tar.gz
+echo "Exit status T06: $?"
+
+Keluaran:
+Memverifikasi integritas arsip: /tmp/uji_afaf/arsip/backup_uji.tar.gz
+Checksum Acuan  : a019235b4a1e8132e9b60566c17b39a7904297b07c38d1a68c704923f6494a9e
+Checksum Aktual : a019235b4a1e8132e9b60566c17b39a7904297b07c38d1a68c704923f6494a9e
+==========================================
+VERIFIKASI BERHASIL! Checksum cocok.
+==========================================
+Exit status T06: 0
+
+[3] Pengujian T07 - Verifikasi Arsip yang Diubah (Kondisi Negatif)
+Perintah simulasi modifikasi:
+cp /tmp/uji_afaf/arsip/backup_uji.tar.gz /tmp/uji_afaf/arsip/backup_rusak.tar.gz
+cp /tmp/uji_afaf/arsip/backup_uji.tar.gz.sha256 /tmp/uji_afaf/arsip/backup_rusak.tar.gz.sha256
+printf "modifikasi_ilegal" >> /tmp/uji_afaf/arsip/backup_rusak.tar.gz
+./scripts/verify.sh verify /tmp/uji_afaf/arsip/backup_rusak.tar.gz
+echo "Exit status T07: $?"
+
+Keluaran:
+Memverifikasi integritas arsip: /tmp/uji_afaf/arsip/backup_rusak.tar.gz
+Checksum Acuan  : a019235b4a1e8132e9b60566c17b39a7904297b07c38d1a68c704923f6494a9e
+Checksum Aktual : 9b855514af8bb19308ca4253d50be4c0ece6ea8ca007700d693a830bfaf60f03
+==========================================
+VERIFIKASI GAGAL! Checksum tidak cocok (arsip berubah/rusak).
+==========================================
+Exit status T07: 1
